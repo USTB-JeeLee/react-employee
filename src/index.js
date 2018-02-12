@@ -9,6 +9,8 @@ import registerServiceWorker from './registerServiceWorker';
 import Login from './container/login/login.js'
 import Register from './container/register/register.js'
 import AuthRoute from './component/authroute/authroute'
+import BossInfo from './container/bossinfo/bossinfo'
+import GeniusInfo from './container/geniusinfo/geniusinfo'
 import reducers from './reducers'
 import './config'
 import './index.css'
@@ -26,10 +28,14 @@ ReactDOM.render(
     <Provider store={store}>
         <BrowserRouter>
             <div>
-                <AuthRoute></AuthRoute>   
-                <Route path='/boss' component={Boss}></Route>     
-                <Route path='/login' component={Login}></Route>
-                <Route path='/register' component={Register}></Route>
+                <AuthRoute></AuthRoute>
+                <Switch>
+                    <Route path='/bossinfo' component={BossInfo}></Route>
+                    <Route path='/boss' component={BossInfo}></Route>
+                    <Route path='/genius' component={GeniusInfo}></Route>     
+                    <Route path='/login' component={Login}></Route>
+                    <Route path='/register' component={Register}></Route>
+                </Switch>   
             </div>
         </BrowserRouter>
     </Provider>, 
