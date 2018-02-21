@@ -2,15 +2,15 @@
 
 本项目使用的是React实现的项目
 
-首页效果图
+### 注册页面效果图
 <img src="./static/register.png" alt="体验地址" width="375" height="667">
 
 
-白条效果图
+### BOSS信息完善页面效果图
 <img src="./static/bossinfo.png" alt="体验地址" width="375" height="667">
 
 
-众筹效果图
+### GENIUS信息完善页面效果图
 <img src="./static/geniusinfo.png" alt="体验地址" width="375" height="667">
 
 
